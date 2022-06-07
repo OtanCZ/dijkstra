@@ -14,6 +14,7 @@
                      <children>
                       <Button layoutX="503.0" layoutY="301.0" mnemonicParsing="false" onAction="#createNodeButtonClick" text="Create Node" />
                         <TextField fx:id="nodeName" layoutX="14.0" layoutY="14.0" prefHeight="25.0" prefWidth="573.0" promptText="Node Name" />
+                        <ListView fx:id="nodeList" layoutX="14.0" layoutY="47.0" prefHeight="246.0" prefWidth="573.0" />
                      </children>
                   </AnchorPane>
             </content>
@@ -22,17 +23,28 @@
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <Button layoutX="508.0" layoutY="301.0" mnemonicParsing="false" onAction="#createPathButtonClick" text="Create Path" />
+                        <Button layoutX="508.0" layoutY="302.0" mnemonicParsing="false" onAction="#createPathButtonClick" text="Create Path" />
                         <ChoiceBox fx:id="pathFrom" layoutX="69.0" layoutY="14.0" prefWidth="150.0" />
                         <ChoiceBox fx:id="pathTo" layoutX="233.0" layoutY="14.0" prefWidth="150.0" />
                         <Label layoutX="14.0" layoutY="18.0" text="Path from:" />
                         <Label layoutX="219.0" layoutY="18.0" text="to:" />
                         <TextField fx:id="pathWeight" layoutX="41.0" layoutY="60.0" />
                         <Label layoutX="14.0" layoutY="64.0" text="Cost:" />
+                        <ListView fx:id="pathList" layoutX="14.0" layoutY="91.0" prefHeight="236.0" prefWidth="478.0" />
+                        <CheckBox fx:id="pathBothWays" layoutX="216.0" layoutY="64.0" mnemonicParsing="false" text="Both ways" />
                      </children>
                   </AnchorPane>
             </content>
           </Tab>
+            <Tab text="Calculate Path">
+                <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                        <children>
+
+                        </children>
+                    </AnchorPane>
+                </content>
+            </Tab>
         </tabs>
       </TabPane>
    </children>
